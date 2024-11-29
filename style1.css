@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#navbar1{
+    color: black;
+}
+.carousel-item{
+    height: 400px;
+}
+.carousel-image-1{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/1200px-A_small_cup_of_coffee.JPG);
+    background-size: cover;
+    background-position: center;
+}
+.carousel-image-2{
+    background-image: url(https://www.gourmetandcuisine.com/Images/editor_upload/_editor20211001103759_original.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.carousel-image-3{
+    background-image: url(https://image.makewebcdn.com/makeweb/m_1920x0/IhPi1ISo1/%E0%B8%9A%E0%B8%97%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1/coffee_g3502ddcdf_1920.jpg);
+    background-size: cover ;
+    background-position: center;
+}
+.display-3{
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+#story{
+    height: auto;
+    margin: 40px 0;
+}
+.container{
+    max-width: 1150px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+#login{
+    justify-content: center;
+    display: flex;
+}
+.text-center{
+    margin: 20px;
+}
+img{
+    width: 50%;
+    height: 200px;
+    width: 200px;
+    margin: auto auto;
+    display: block;
+   }
+.row{
+    margin: 3rem;
+}
+.form-login{
+    margin: 40px;
+    max-width: 400px;
+    justify-content: center;
+}
+.flex{
+    display: flex;
+    margin: 20px;
+    align-items: center;
+}
+.golden-img img{
+    width: 100%;
+    margin: 20px;
+    width: 400px;
+    height: 300px;
+    display: inline-block;
+}
+.text-body{
+    padding: 20px;
+}
+#footer{
+    color: black;
+    margin-top: 40px;
+    background-color: burlywood;
+    padding: 20px;
+}
+#footer a{
+    color: black;
+}
+.footer-list a{
+    text-decoration: none;
+}
+.footer-list li{
+    list-style: none;
+}
+.footer-item p i{
+    font-size: 24px;
+    padding-right: 10px;
+}
+.line{
+    justify-items: center;
+    float: left;
+    border-right: 1px solid black;
+    padding-right: 0.5rem;
+    margin-right: 0.5rem;
+}
+.copyright{
+    align-items: center;
+    text-align: center;
+}

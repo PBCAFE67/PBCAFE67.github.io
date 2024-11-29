@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>PB Cafe</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/bootstrap.min.js"></script> 
+        <link rel="stylesheet" href="style1.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <!--สร้างเมนู-->
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <div class="container">
+                <a href="#" class="navbar-brand">PB Cafe</a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar1">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navbar1" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="Home.html" class="nav-link">หน้าแรก</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="coffee.html" class="nav-link">กาแฟ</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button">สินค้า</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="Accessories1.html" class="dropdown-item">กาแฟ</a></li>
+                                <li><a href="Accessories2.html" class="dropdown-item">ของทานเล่น</a></li>
+                                <li><a href="Accessories3.html" class="dropdown-item">ข้าว</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">เกี่ยวกับเรา</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Register.html" class="nav-link">สมัครสมาชิก</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Login.html" class="nav-link">เข้าสู่ระบบ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <!--เนื้อหาแต่ละหน้า-->
+    <section id="slider">
+        <div class="carousel slide" data-bs-ride="carousel" id="mySlider">
+            <ol class="carousel-indicators">
+                <button data-bs-target="#mySlider" data-bs-slide-to="0"></button>
+                <button data-bs-target="#mySlider" data-bs-slide-to="1" class="active"></button>
+                <button data-bs-target="#mySlider" data-bs-slide-to="2"></button>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item carousel-image-1">
+                    <div class="container">
+                        <div class="carousel-caption d-none d-sm-block">
+                            <h1 class="display-3">ต้องการทานกาแฟอยู่ใช่ไหมครับ</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-image-2 active">
+                    <div class="container">
+                        <div class="carousel-caption d-none d-sm-block">
+                            <h1 class="display-3">มาทำความเข้าใจเกี่ยวกับกาแฟกันก่อนนะครับ</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-image-3">
+                    <div class="container">
+                        <div class="carousel-caption d-none d-sm-block">
+                            <h1 class="display-3">เมนูที่ใช่สำหรับคุณ</h1>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" data-bs-target="#mySlider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" data-bs-target="#mySlider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!--form login-->
+    <section id="login">
+        <div class="flex">
+            <img src="https://www.boncafe.co.th/wp-content/uploads/2024/07/delicious-coffee-cup-with-plants-1-1.jpg" alt="">
+        <div class="container form-login">
+         <h2><i class='bx bx-user-pin'></i>เข้าสู่ระบบ</h2>
+          <form action="#" method="post">
+           <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" name="username" required>
+           </div> 
+           <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="password" required>
+           </div>
+           <button type="submit" class="btn btn-success">เข้าสู่ระบบ</button>
+           <button type="reset" class="btn btn-warning">ล้างข้อมูล</button>
+           <a href="Home.html" class="btn btn-info">กลับหน้าหลัก</a>
+          </form>   
+        </div>
+        </div>
+     </section>    
+    <!--Footer-->
+    <section id="footer">
+        <div class="footer-bar">   
+        <div class="container px-4">
+         <div class="row gx-5">
+          <div class="col line">
+           <div class="p-3">
+            <div class="footer-item">
+                <ul class="footer-list">
+                    <li><a href="Home.html">หน้าแรก</a></li>
+                    <li><a href="coffee.html">กาแฟ</a></li>
+                    <li>สินค้า</li>
+                    <ul class="footer-list">
+                        <li><a href="Accessories1.html">กาแฟ</a></li>
+                        <li><a href="Accessories2.html">ของทานเล่น</a></li>
+                        <li><a href="Accessories3.html">ข้าว</a></li>
+                    </ul>
+                    <li><a href="#">เกี่ยวกับเรา</a></li>
+                </ul>
+            </div>
+           </div>
+          </div>  
+           <div class="col line">
+            <div class="p-3">
+                <h5>About</h5>
+                <div class="footer-item">
+                    <P>ร้าน PB Cafe </P>
+                </div>
+            </div>
+           </div>
+           <div class="col">
+            <div class="p-3">
+                <h5>ติดต่อ</h5>
+                <div class="footer-item">    
+                    <p><i class='bx bxl-facebook-square'></i>Facbook</p>
+                    <p><i class='bx bxl-instagram'></i>Instagram</p>
+                    <p><i class='bx bx-chat'></i>Line : @PB CAFE</p>
+                </div>
+            </div>
+           </div>
+         </div>
+        </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; </p>
+        </div>     
+        </section>
+    </body>
+</html>

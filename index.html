@@ -1,71 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <table>Project Bagery</table>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <section class="header">     
-    </header>
-    <!---navdar-->
-    <div class="container">
-        <nav>
-            <div class="logo">My Website</div>
-            <ul class="nav-list">
-                <li><a href="#">หน้าหลัก</a></li>
-                <li><a href="#Product">สินค้า</a></li>
-                <li><a href="#Service">บริการ</a></li>
-                <li><a href="#About">เกี่ยวกับ</a></li>
-            </ul>
+    <head>
+        <title>PB Cafe</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style1.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+    <!--สร้างเมนู-->
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <div class="container">
+                <a href="#" class="navbar-brand">PB Cafe</a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar1">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navbar1" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="Home.html" class="nav-link">หน้าแรก</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="coffee.html" class="nav-link">กาแฟ</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button">สินค้า</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="Accessories1.html" class="dropdown-item">กาแฟ</a></li>
+                                <li><a href="Accessories2.html" class="dropdown-item">ของทานเล่น</a></li>
+                                <li><a href="Accessories3.html" class="dropdown-item">ข้าว</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">เกี่ยวกับเรา</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Register.html" class="nav-link">สมัครสมาชิก</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Login.html" class="nav-link">เข้าสู่ระบบ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
         </nav>
-    </div>
-    </header>
+    <!--การสร้าง Slider-->
+    <section id="slider">
+        <div class="carousel slide" data-bs-ride="carousel" id="mySlider">
+            <ol class="carousel-indicators">
+                <button data-bs-target="#mySlider" data-bs-slide-to="0"></button>
+                <button data-bs-target="#mySlider" data-bs-slide-to="1" class="active"></button>
+                <button data-bs-target="#mySlider" data-bs-slide-to="2"></button>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item carousel-image-1">
+                    <div class="container">
+                        <div class="carousel-caption d-none d-sm-block">
+                            <h1 class="display-3">ต้องการทานกาแฟอยู่ใช่ไหมครับ</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-image-2 active">
+                    <div class="container">
+                        <div class="carousel-caption d-none d-sm-block">
+                            <h1 class="display-3">มาทำความเข้าใจเกี่ยวกับกาแฟกันก่อนนะครับ</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-image-3">
+                    <div class="container">
+                        <div class="carousel-caption d-none d-sm-block">
+                            <h1 class="display-3">เมนูที่ใช่สำหรับคุณ</h1>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" data-bs-target="#mySlider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" data-bs-target="#mySlider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
     </section>
-    <section id="#Product"></section>
-    <div class="container box" style="background-color: rgba(226, 159, 72, 0.966);">
-        <h2>สินค้า</h2>
-    <div class="flex">
-<img src="https://images.pexels.com/photos/28056731/pexels-photo-28056731/free-photo-of-a-plate-with-a-bagel-and-coffee-on-it.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-<p>
-    กาแฟ เป็นเครื่องดื่มที่ทำจากเมล็ดซึ่งได้จาก ต้นกาแฟ หรือมักเรียกว่า เมล็ดกาแฟ คั่ว มีการปลูกต้นกาแฟในมากกว่า 70 ประเทศทั่วโลก กาแฟเขียว (กาแฟซึ่งยังไม่ผ่านการคั่ว) เป็นหนึ่งในสินค้าทางการเกษตรซึ่งมีการซื้อขายกันมากที่สุดในโลก กาแฟมีส่วนประกอบของคาเฟอีน ทำให้มีสรรพคุณชูกำลังในมนุษย์ ปัจจุบันกาแฟเป็นเครื่องดื่มซึ่งได้รับความนิยมมากที่สุดในโลก
-</p>
-    </div>
-   </section>
-   <section id="Service">
-    <div class="container box" style="background-color: burlywood;">
-        <h2>การบริการ</h2>
-        <div class="flex">  
-<img src="https://images.pexels.com/photos/28495592/pexels-photo-28495592/free-photo-of-barista-preparing-coffee-in-modern-cafe-setting.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-        <p>
-            การบริการคือกิจกรรมที่มีเจตนาให้บริการแก่ลูกค้าหรือผู้ใช้บริการโดยมีวัตถุประสงค์หลักคือการสร้างความพึงพอใจและส่งมอบความพึงพอใจให้กับลูกค้า การบริการนั้นมีหลายประเภทขึ้นอยู่กับประเภทธุรกิจ ขึ้นอยู่กับ ผู้ประกอบการ ในธุรกิจนั้นๆ  เช่น การบริการในสายงานด้านการท่องเที่ยวและโรงแรม การบริการในสายงานด้านการขนส่งและโลจิสติกส์ การบริการในสายงานด้านอาหารและเครื่องดื่ม การบริการในสายงานด้านการเงินและการลงทุน และอีกมากมาย การบริการ สามารถมอบประสบการณ์ที่ดีแก่ลูกค้าได้ ซึ่งอาจส่งผลต่อการซื้อสินค้าหรือการใช้บริการในอนาคตด้วย
-        </p>
-</div>
-    </div>
-   </section>
-   <section id="#About">
-    <div class="container box" style="background-color:burlywood;">
-        <h2>เกี่ยวกับเรา</h2>
-        <div class="flex">
-            <img src="https://images.pexels.com/photos/2079438/pexels-photo-2079438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-            <p>
-                ร้านกาแฟ หรือ คาเฟ่ (ฝรั่งเศส: café) เป็นร้านประกอบกิจการเกี่ยวกับกาแฟ[1] ลักษณะร้านแบบคาเฟ่นั้นเป็นการผสมรูปแบบระหว่าง "ภัตตาคาร" และ "บาร์" เข้าด้วยกัน โดยทั่วไปร้านกาแฟจะไม่จำหน่ายเครื่องดื่มแอลกอฮอล์ จะเน้นไปที่เครื่องดื่มประเภท กาแฟ ชา หรือ ช็อกโกแลต และอาจมีอาหารว่าง อย่างซุป แซนด์วิช ขนมอบและของหวานที่เสิร์ฟเคียงกับเครื่องดื่ม เช่น เค้กหรือคุกกี้ไว้บริการด้วย
-            </p>
+    <!--เนื้อหา-->
+    <section id="story">
+        <div class="container">
+            <div class="flex">
+                <div class="coffee-img">
+                    <img src="https://main.healthstation.in.th/uploads/images/62d1310131edff447ddeabfa88bf8300.jpg" alt="">
+                </div>
+                <div class="text-body">
+                    <h3>การทานกาแฟ</h3>
+                    <p>กาแฟ เป็นส่วนหนึ่งในชีวิตประจำวันของใครหลายคน จัดเป็นเครื่องดื่มที่ได้รับความนิยมและดื่มกันอย่างแพร่หลายทั่วโลก หากดูจากสถิติในแต่ละปี ประชากรทั่วโลกดื่มกาแฟเฉลี่ยสูงถึงคนละ 42.6 ลิตร และตลาดธุรกิจกาแฟจัดได้ว่าใหญ่เป็นอันดับต้น ๆ ในกลุ่มเครื่องดื่ม 
+
+                        ข้อมูลจาก STATISTA แสดงให้เห็นว่า ในปี 2021 เม็ดเงินในธุรกิจกาแฟมีมูลค่าสูงถึง 4 แสนล้านดอลลาร์สหรัฐ  และคาดว่าจะเติบโตขึ้นเฉลี่ยปีละ 8.28% จนถึงปี 2025</p>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="text-body">
+                    <h3>ข้อดีข้อเสีย</h3>
+                    <p>ข้อดีของกาแฟ ได้รับการวิจัยไว้ว่ามีประโยชน์ต่อสุขภาพมากมาย ได้แก่<br>
+                        1. ลดความเสี่ยงโรคหัวใจและหลอดเลือด (Cardiovascular disease; CVD) มีงานวิจัยยืนยันว่าการดื่มกาแฟดำในปริมาณที่เหมาะสมช่วยลดความเสี่ยงการเกิดโรคหัวใจและหลอดเลือดได้ และยังสามารถลดการเสียชีวิตจากโรคหัวใจและหลอดเลือดได้สูงถึง 21%<br>
+                        2. ฤทธิ์ต้านมะเร็ง กาแฟมีสารต้านอนุมูลอิสระมากมาย มีงานวิจัยแสดงให้เห็นว่า การดื่มกาแฟสามารถลดความเสี่ยงของมะเร็งบางชนิด เช่น หากดื่มกาแฟวันละ 2 แก้ว ช่วยลดความเสี่ยงมะเร็งตับได้ถึง 43% และลดความเสี่ยงมะเร็งเต้านมได้ถึง 52%<br>
+                        3. ลดความเสี่ยงโรคเบาหวาน การดื่มกาแฟมีความสัมพันธ์กับการลดภาวะดื้อต่ออินสุลิน (Insulin Resistance) การดื่มกาแฟ 1 แก้วต่อวัน ช่วยลดความเสี่ยงการเป็นโรคเบาหวานได้ 6% และมีส่วนช่วยในการลดภาวะแทรกซ้อนของโรคเบาหวาน จากความสามารถในการต้านอนุมูลอิสระและลดการอักเสบ<br>
+                        4. ช่วยลดโรคอ้วน กาแฟช่วยลดระดับฮอร์โมนเกรลิน (Ghrelin) ที่เกี่ยวข้องกับความหิว ช่วยเพิ่มการเผาผลาญไขมันในร่างกาย โดยคาเฟอีนช่วยเพิ่มการเผาผลาญพลังงานของคนที่มีน้ำหนักตัวปกติ ได้ 29% และในคนอ้วนได้ 10%<br>
+                        5. ลดความเสี่ยงของโรคทางสมอง เช่น โรคอัลไซเมอร์ โรคพาร์กินสัน มีงานวิจัยพบว่า การดื่มกาแฟอย่างสม่ำเสมอ ช่วยลดความเสี่ยงและชะลอการเกิดโรคที่เกี่ยวกับสมองได้<br>
+                        6. เพิ่มประสิทธิภาพการออกกำลังกาย หากได้รับคาเฟอีน 3-6 มิลลิกรัมต่อน้ำหนักตัวหนึ่งกิโลกรัม ช่วยเพิ่มสมรรถนะและความทนทานในการออกกำลังกายรูปแบบต่าง ๆ ได้
+                    </p>
+                </div>
+                <div class="coffee-img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Roasted_coffee_beans.jpg/640px-Roasted_coffee_beans.jpg" alt="">
+                </div>
+            </div>
         </div>
-    </div>
-   </section>
-   <section id="Service">
-    <div class="container box" style="background-color: burlywood;">
-        <h2> Copyright 2024 บริษัท Coffee Bar Café จำกัด</h2>
-        <div class="flex">
-            <p>
-                ผู้จัดทำ โดย 67162583 เอกฤทธิ์ ก้อนทองดี และ 67135935 ภัทรกร ยิ้มยวน
-            </p>
-        </div>
-        </section>
-</body>
+    </section>
+        <!--Footer-->
+        <section id="footer">
+            <div class="footer-bar">   
+            <div class="container px-4">
+             <div class="row gx-5">
+              <div class="col line">
+               <div class="p-3">
+                <div class="footer-item">
+                    <ul class="footer-list">
+                        <li><a href="Home.html">หน้าแรก</a></li>
+                        <li><a href="coffee.html">กาแฟ</a></li>
+                        <li>สินค้า</li>
+                        <ul class="footer-list">
+                            <li><a href="Accessories1.html">กาแฟ</a></li>
+                            <li><a href="Accessories2.html">ของทานเล่น</a></li>
+                            <li><a href="Accessories3.html">ข้าว</a></li>
+                        </ul>
+                        <li><a href="#">เกี่ยวกับเรา</a></li>
+                    </ul>
+                </div>
+               </div>
+              </div>  
+               <div class="col line">
+                <div class="p-3">
+                    <h5>About</h5>
+                    <div class="footer-item">
+                        <P>ร้าน PB CAFE มีนโยบายที่จะให้ลูกค้าทำความเข้าใจก่อนสั่งกาแฟทาน </P>
+                    </div>
+                </div>
+               </div>
+               <div class="col">
+                <div class="p-3">
+                    <h5>ติดต่อ</h5>
+                    <div class="footer-item">    
+                        <p><i class='bx bxl-facebook-square'></i>Facbook</p>
+                        <p><i class='bx bxl-instagram'></i>Instagram</p>
+                        <p><i class='bx bx-chat'></i>Line : @PB CAFE</p>
+                    </div>
+                </div>
+               </div>
+             </div>
+            </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy; </p>
+            </div>     
+            </section>
+    </body>
 </html>

@@ -1,169 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>PB Cafe</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <script src="js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="style1.css">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    </head>
-    <body>
-    <!--สร้างเมนู-->
-        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+<html lang="th">
+<head>
+    <title>PB Cafe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style1.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Sarabun', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f1de;
+        }
+        header {
+            background-color: #4a2c2a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .coffee-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .menu-section {
+            background-color: #e8d6c4;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .contact {
+            background-color: #d5bdaf;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+   <!--สร้างเมนู-->
+   <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <div class="container">
+        <a href="#" class="navbar-brand">PB Cafe</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar1">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbar1" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="Home.html" class="nav-link">หน้าแรก</a>
+                </li>
+                <li class="nav-item">
+                    <a href="coffee.html" class="nav-link">กาแฟ</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button">สินค้า</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Accessories1.html" class="dropdown-item">กาแฟ</a></li>
+                        <li><a href="Accessories2.html" class="dropdown-item">ของทานเล่น</a></li>
+                        <li><a href="Accessories3.html" class="dropdown-item">ข้าว</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">เกี่ยวกับเรา</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Register.html" class="nav-link">สมัครสมาชิก</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Login.html" class="nav-link">เข้าสู่ระบบ</a>
+                </li>
+            </ul>
+        </div>
+    </div> 
+</nav>
+<!--การสร้าง Slider-->
+<section id="slider">
+<div class="carousel slide" data-bs-ride="carousel" id="mySlider">
+    <ol class="carousel-indicators">
+        <button data-bs-target="#mySlider" data-bs-slide-to="0"></button>
+        <button data-bs-target="#mySlider" data-bs-slide-to="1" class="active"></button>
+        <button data-bs-target="#mySlider" data-bs-slide-to="2"></button>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item carousel-image-1">
             <div class="container">
-                <a href="#" class="navbar-brand">PB Cafe</a>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar1">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div id="navbar1" class="collapse navbar-collapse">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a href="Home.html" class="nav-link">หน้าแรก</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="coffee.html" class="nav-link">กาแฟ</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button">สินค้า</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="Accessories1.html" class="dropdown-item">กาแฟ</a></li>
-                                <li><a href="Accessories2.html" class="dropdown-item">ของทานเล่น</a></li>
-                                <li><a href="Accessories3.html" class="dropdown-item">ข้าว</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">เกี่ยวกับเรา</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="Register.html" class="nav-link">สมัครสมาชิก</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="Login.html" class="nav-link">เข้าสู่ระบบ</a>
-                        </li>
-                    </ul>
+                <div class="carousel-caption d-none d-sm-block">
+                    <h1 class="display-3">ต้องการทานกาแฟอยู่ใช่ไหมครับ</h1>
                 </div>
-            </div> 
-        </nav>
-    <!--การสร้าง Slider-->
-    <section id="slider">
-        <div class="carousel slide" data-bs-ride="carousel" id="mySlider">
-            <ol class="carousel-indicators">
-                <button data-bs-target="#mySlider" data-bs-slide-to="0"></button>
-                <button data-bs-target="#mySlider" data-bs-slide-to="1" class="active"></button>
-                <button data-bs-target="#mySlider" data-bs-slide-to="2"></button>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item carousel-image-1">
-                    <div class="container">
-                        <div class="carousel-caption d-none d-sm-block">
-                            <h1 class="display-3">ต้องการทานกาแฟอยู่ใช่ไหมครับ</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item carousel-image-2 active">
-                    <div class="container">
-                        <div class="carousel-caption d-none d-sm-block">
-                            <h1 class="display-3">มาทำความเข้าใจเกี่ยวกับกาแฟกันก่อนนะครับ</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item carousel-image-3">
-                    <div class="container">
-                        <div class="carousel-caption d-none d-sm-block">
-                            <h1 class="display-3">เมนูที่ใช่สำหรับคุณ</h1>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" data-bs-target="#mySlider" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" data-bs-target="#mySlider" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
             </div>
         </div>
-    </section>
-    <!--เนื้อหา-->
-    <section id="story">
-        <div class="container">
-            <div class="flex">
-                <div class="coffee-img">
-                    <img src="https://main.healthstation.in.th/uploads/images/62d1310131edff447ddeabfa88bf8300.jpg" alt="">
+        <div class="carousel-item carousel-image-2 active">
+            <div class="container">
+                <div class="carousel-caption d-none d-sm-block">
+                    <h1 class="display-3">มาทำความเข้าใจเกี่ยวกับกาแฟกันก่อนนะครับ</h1>
                 </div>
-                <div class="text-body">
-                    <h3>การทานกาแฟ</h3>
-                    <p>กาแฟ เป็นส่วนหนึ่งในชีวิตประจำวันของใครหลายคน จัดเป็นเครื่องดื่มที่ได้รับความนิยมและดื่มกันอย่างแพร่หลายทั่วโลก หากดูจากสถิติในแต่ละปี ประชากรทั่วโลกดื่มกาแฟเฉลี่ยสูงถึงคนละ 42.6 ลิตร และตลาดธุรกิจกาแฟจัดได้ว่าใหญ่เป็นอันดับต้น ๆ ในกลุ่มเครื่องดื่ม 
+            </div>
+        </div>
+        <div class="carousel-item carousel-image-3">
+            <div class="container">
+                <div class="carousel-caption d-none d-sm-block">
+                    <h1 class="display-3">เมนูที่ใช่สำหรับคุณ</h1>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" data-bs-target="#mySlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" data-bs-target="#mySlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+</div>
+</section>
+   
+   
+   
+   
+    <header>
+        <h1>PB CAFE</h1>
+        <p>แหล่งรวมกาแฟคุณภาพ</p>
+    </header>
 
-                        ข้อมูลจาก STATISTA แสดงให้เห็นว่า ในปี 2021 เม็ดเงินในธุรกิจกาแฟมีมูลค่าสูงถึง 4 แสนล้านดอลลาร์สหรัฐ  และคาดว่าจะเติบโตขึ้นเฉลี่ยปีละ 8.28% จนถึงปี 2025</p>
-                </div>
-            </div>
-            <div class="flex">
-                <div class="text-body">
-                    <h3>ข้อดีข้อเสีย</h3>
-                    <p>ข้อดีของกาแฟ ได้รับการวิจัยไว้ว่ามีประโยชน์ต่อสุขภาพมากมาย ได้แก่<br>
-                        1. ลดความเสี่ยงโรคหัวใจและหลอดเลือด (Cardiovascular disease; CVD) มีงานวิจัยยืนยันว่าการดื่มกาแฟดำในปริมาณที่เหมาะสมช่วยลดความเสี่ยงการเกิดโรคหัวใจและหลอดเลือดได้ และยังสามารถลดการเสียชีวิตจากโรคหัวใจและหลอดเลือดได้สูงถึง 21%<br>
-                        2. ฤทธิ์ต้านมะเร็ง กาแฟมีสารต้านอนุมูลอิสระมากมาย มีงานวิจัยแสดงให้เห็นว่า การดื่มกาแฟสามารถลดความเสี่ยงของมะเร็งบางชนิด เช่น หากดื่มกาแฟวันละ 2 แก้ว ช่วยลดความเสี่ยงมะเร็งตับได้ถึง 43% และลดความเสี่ยงมะเร็งเต้านมได้ถึง 52%<br>
-                        3. ลดความเสี่ยงโรคเบาหวาน การดื่มกาแฟมีความสัมพันธ์กับการลดภาวะดื้อต่ออินสุลิน (Insulin Resistance) การดื่มกาแฟ 1 แก้วต่อวัน ช่วยลดความเสี่ยงการเป็นโรคเบาหวานได้ 6% และมีส่วนช่วยในการลดภาวะแทรกซ้อนของโรคเบาหวาน จากความสามารถในการต้านอนุมูลอิสระและลดการอักเสบ<br>
-                        4. ช่วยลดโรคอ้วน กาแฟช่วยลดระดับฮอร์โมนเกรลิน (Ghrelin) ที่เกี่ยวข้องกับความหิว ช่วยเพิ่มการเผาผลาญไขมันในร่างกาย โดยคาเฟอีนช่วยเพิ่มการเผาผลาญพลังงานของคนที่มีน้ำหนักตัวปกติ ได้ 29% และในคนอ้วนได้ 10%<br>
-                        5. ลดความเสี่ยงของโรคทางสมอง เช่น โรคอัลไซเมอร์ โรคพาร์กินสัน มีงานวิจัยพบว่า การดื่มกาแฟอย่างสม่ำเสมอ ช่วยลดความเสี่ยงและชะลอการเกิดโรคที่เกี่ยวกับสมองได้<br>
-                        6. เพิ่มประสิทธิภาพการออกกำลังกาย หากได้รับคาเฟอีน 3-6 มิลลิกรัมต่อน้ำหนักตัวหนึ่งกิโลกรัม ช่วยเพิ่มสมรรถนะและความทนทานในการออกกำลังกายรูปแบบต่าง ๆ ได้
-                    </p>
-                </div>
-                <div class="coffee-img">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Roasted_coffee_beans.jpg/640px-Roasted_coffee_beans.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-        <!--Footer-->
-        <section id="footer">
-            <div class="footer-bar">   
-            <div class="container px-4">
-             <div class="row gx-5">
-              <div class="col line">
-               <div class="p-3">
-                <div class="footer-item">
-                    <ul class="footer-list">
-                        <li><a href="Home.html">หน้าแรก</a></li>
-                        <li><a href="coffee.html">กาแฟ</a></li>
-                        <li>สินค้า</li>
-                        <ul class="footer-list">
-                            <li><a href="Accessories1.html">กาแฟ</a></li>
-                            <li><a href="Accessories2.html">ของทานเล่น</a></li>
-                            <li><a href="Accessories3.html">ข้าว</a></li>
-                        </ul>
-                        <li><a href="#">เกี่ยวกับเรา</a></li>
-                    </ul>
-                </div>
-               </div>
-              </div>  
-               <div class="col line">
-                <div class="p-3">
-                    <h5>About</h5>
-                    <div class="footer-item">
-                        <P>ร้าน PB CAFE มีนโยบายที่จะให้ลูกค้าทำความเข้าใจก่อนสั่งกาแฟทาน </P>
-                    </div>
-                </div>
-               </div>
-               <div class="col">
-                <div class="p-3">
-                    <h5>ติดต่อ</h5>
-                    <div class="footer-item">    
-                        <p><i class='bx bxl-facebook-square'></i>Facbook</p>
-                        <p><i class='bx bxl-instagram'></i>Instagram</p>
-                        <p><i class='bx bx-chat'></i>Line : @PB CAFE</p>
-                    </div>
-                </div>
-               </div>
-             </div>
-            </div>
-            </div>
-            <div class="copyright">
-                <p>Copyright &copy; </p>
-            </div>     
-            </section>
-    </body>
+    <main>
+        <img src="https://st2.depositphotos.com/1526816/5409/v/950/depositphotos_54092299-stock-illustration-coffee-shop-illustration.jpg" alt="ภาพร้านกาแฟ" class="coffee-image">
+
+        <section>
+            <h2>เกี่ยวกับเรา</h2>
+            <p>PB CAFE คือร้านกาแฟที่มุ่งมั่นในการสรรหากาแฟคุณภาพจากแหล่งปลูกชั้นเยี่ยม เราคัดสรรเมล็ดกาแฟจากไร่ชั้นนำทั่วโลก และคั่วอย่างพิถีพิถัน เพื่อส่งมอบรสชาติที่เป็นเอกลักษณ์และความสุขในทุกๆ แก้ว</p>
+        </section>
+
+        <section class="menu-section">
+            <h2>เมนูแนะนำ</h2>
+            <ul>
+                <li>เอสเปรสโซ่</li>
+                <li>คาปูชิโน่ - หอมละมุนด้วยฟองนม</li>
+                <li>ลาเต้ - กาแฟนุ่มนวลพร้อมลายศิลป์</li>
+            </ul>
+        </section>
+
+        <section class="contact">
+            <h2>ติดต่อเรา</h2>
+            <p>📍 ที่ตั้ง: </p>
+            <p>📞 โทร: 0931121112</p>
+            <p>🕰️ เวลาเปิดทำการ: 07:00 - 20:00 น. (ทุกวัน)</p>
+        </section>
+    </main>
+
+    <footer style="text-align: center; margin-top: 20px;">
+        <p> PB CAFE - ทุกอย่างเริ่มต้นที่กาแฟ</p>
+    </footer>
+</body>
 </html>

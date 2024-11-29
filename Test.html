@@ -1,0 +1,251 @@
+<html>
+ <head>
+  <title>
+   TAGNIMAL
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            border-bottom: 1px solid #eaeaea;
+        }
+        .header .logo {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .header .menu-icon {
+            font-size: 24px;
+        }
+        .header .icons {
+            display: flex;
+            align-items: center;
+        }
+        .header .icons i {
+            margin-left: 20px;
+            font-size: 20px;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #eaeaea;
+        }
+        .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #000;
+            font-weight: 500;
+        }
+        .nav a.active {
+            border-bottom: 2px solid #000;
+        }
+        .content {
+            padding: 20px;
+        }
+        .filter-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .filter-bar .sort {
+            display: flex;
+            align-items: center;
+        }
+        .filter-bar .sort select {
+            margin-left: 10px;
+            padding: 5px;
+        }
+        .filter-bar .view-options i {
+            margin-left: 10px;
+            font-size: 20px;
+        }
+        .products {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .product {
+            width: 18%;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .product .new {
+            position: absolute;
+            background-color: #ff7f50;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            top: 10px;
+            left: 10px;
+        }
+        .product .name {
+            margin: 10px 0 5px;
+            font-weight: 500;
+        }
+        .product .price {
+            color: #000;
+            font-weight: 700;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="header">
+   <div class="menu-icon">
+    <i class="fas fa-bars">
+    </i>
+   </div>
+   <div class="logo">
+    TAGNIMAL
+   </div>
+   <div class="icons">
+    <i class="fas fa-search">
+    </i>
+    <i class="fas fa-user">
+    </i>
+    <i class="fas fa-shopping-cart">
+    </i>
+    <span>
+     0
+    </span>
+   </div>
+  </div>
+  <div class="nav">
+   <a class="active" href="#">
+    น้องทั้งหมด
+   </a>
+   <a href="#">
+    น้องหมา
+    <i class="fas fa-dog">
+    </i>
+   </a>
+   <a href="#">
+    น้องแมว
+    <i class="fas fa-cat">
+    </i>
+   </a>
+   <a href="#">
+    น้องในร้าน
+    <i class="fas fa-home">
+    </i>
+   </a>
+   <a href="#">
+    บริการ
+    <i class="fas fa-bell">
+    </i>
+   </a>
+  </div>
+  <div class="content">
+   <div class="filter-bar">
+    <div class="sort">
+     เรียงตามลำดับล่าสุด
+     <select>
+      <option>
+       ล่าสุด
+      </option>
+      <option>
+       ราคาต่ำสุด
+      </option>
+      <option>
+       ราคาสูงสุด
+      </option>
+     </select>
+    </div>
+    <div class="view-options">
+     <i class="fas fa-th-large">
+     </i>
+     <i class="fas fa-th">
+     </i>
+     <i class="fas fa-filter">
+     </i>
+    </div>
+   </div>
+   <div class="products">
+    <div class="product">
+     <div class="new">
+      ใหม่
+     </div>
+     <img alt="Black and white puppy" height="200" src="https://storage.googleapis.com/a1aa/image/AOKBaABUJjaQM5KPsK5Mlz6IEEc5K6HrFLvfJTAj25YSFc6JA.jpg" width="200"/>
+     <div class="name">
+      Duo (ดูโอ)
+      <i class="fas fa-mars">
+      </i>
+     </div>
+     <div class="price">
+      ฿180,000
+     </div>
+    </div>
+    <div class="product">
+     <div class="new">
+      ใหม่
+     </div>
+     <img alt="Fluffy white puppy" height="200" src="https://storage.googleapis.com/a1aa/image/BmeCEWNFq1X5KyAfiruMGGouakP3FgBUWEAYZghkvGCgK40TA.jpg" width="200"/>
+     <div class="name">
+      Kate (เคท)
+      <i class="fas fa-venus">
+      </i>
+     </div>
+     <div class="price">
+      ฿180,000
+     </div>
+    </div>
+    <div class="product">
+     <div class="new">
+      ใหม่
+     </div>
+     <img alt="Small white and brown puppy" height="200" src="https://storage.googleapis.com/a1aa/image/rQrjUxNqN7pLIxqU0yuGJYRtuJ3YLoxJLqKSoJRzF2poCO9E.jpg" width="200"/>
+     <div class="name">
+      Genie (จีนี่)
+      <i class="fas fa-venus">
+      </i>
+     </div>
+     <div class="price">
+      ฿200,000
+     </div>
+    </div>
+    <div class="product">
+     <div class="new">
+      ใหม่
+     </div>
+     <img alt="Small brown and white puppy in leaves" height="200" src="https://storage.googleapis.com/a1aa/image/RflpruMw0l0GJyMSSzeVdGeTrhjgts8Wthf0wUgG8uWVqgTPB.jpg" width="200"/>
+     <div class="name">
+      Aladdin (อะลาดิน)
+      <i class="fas fa-mars">
+      </i>
+     </div>
+     <div class="price">
+      ฿200,000
+     </div>
+    </div>
+    <div class="product">
+     <div class="new">
+      ใหม่
+     </div>
+     <img alt="Fluffy white puppy" height="200" src="https://storage.googleapis.com/a1aa/image/BmeCEWNFq1X5KyAfiruMGGouakP3FgBUWEAYZghkvGCgK40TA.jpg" width="200"/>
+     <div class="name">
+      Wiz (วิส)
+      <i class="fas fa-mars">
+      </i>
+     </div>
+     <div class="price">
+      ฿150,000
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
